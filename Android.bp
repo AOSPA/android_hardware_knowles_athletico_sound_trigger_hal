@@ -46,7 +46,10 @@ soong_config_module_type {
 
 use_sound_trigger_hal_cc_defaults {
     name: "use_sound_trigger_hal_defaults",
-    header_libs: ["device_kernel_headers"],
+    header_libs: [
+        "device_kernel_headers",
+        "qti_kernel_headers",
+    ],
     soong_config_variables: {
         use_sound_trigger_hal: {
             iaxxx: {
